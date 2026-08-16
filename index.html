@@ -3,337 +3,560 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Black Scissors Unisex Salon | Pethapur, Gandhinagar</title>
-<meta name="description" content="Black Scissors Unisex Salon in Pethapur, Gandhinagar. Haircuts, beard styling, hair spa, hair color, facial and grooming services.">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Black Scissors Unisex Salon">
-<link rel="canonical" href="https://blackscissorssalon.github.io/black-scissors-salon/">
+
+<title>Black Scissors Unisex Salon | Pethapur</title>
+
+<meta name="description"
+content="Black Scissors Unisex Salon in Pethapur, Gandhinagar. Professional hair, beauty and grooming services for men and women.">
 
 <style>
-:root{
-  --black:#0b0b0b;
-  --dark:#141414;
-  --gold:#d4af37;
-  --gold2:#f1cf62;
-  --cream:#faf8f1;
-  --text:#222;
-  --muted:#777;
-  --white:#fff;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:var(--cream);
-  color:var(--text);
-  line-height:1.6;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#080808;
+    color:#fff;
 }
-a{text-decoration:none;color:inherit}
-.nav{
-  position:sticky;top:0;z-index:100;
-  background:rgba(11,11,11,.96);
-  backdrop-filter:blur(10px);
-  border-bottom:1px solid rgba(212,175,55,.25);
+
+a{
+    text-decoration:none;
+    color:inherit;
 }
-.nav-inner{
-  max-width:1100px;margin:auto;padding:14px 20px;
-  display:flex;align-items:center;justify-content:space-between;gap:20px;
-}
-.logo{color:var(--white);font-weight:800;letter-spacing:1px}
-.logo span{color:var(--gold)}
-.nav-links{display:flex;gap:22px;color:#ddd;font-size:14px}
-.nav-links a:hover{color:var(--gold)}
+
 .hero{
-  min-height:86vh;
-  display:flex;align-items:center;justify-content:center;
-  text-align:center;padding:70px 20px;
-  color:#fff;
-  background:
-    linear-gradient(rgba(5,5,5,.72),rgba(5,5,5,.82)),
-    url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat;
-  position:relative;
-  overflow:hidden;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:30px 20px;
+    position:relative;
+    overflow:hidden;
+
+    background:
+    linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.82)),
+    url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat;
 }
-.hero-content{max-width:850px}
-.badge{
-  display:inline-block;border:1px solid rgba(212,175,55,.6);
-  color:var(--gold2);padding:7px 14px;border-radius:999px;
-  font-size:13px;letter-spacing:1px;margin-bottom:20px;
+
+.hero:after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at center,
+    rgba(212,175,55,.16),transparent 55%);
+    pointer-events:none;
 }
-.hero h1{font-size:clamp(40px,7vw,72px);line-height:1.05;margin-bottom:16px}
-.hero h1 span{color:var(--gold)}
-.tagline{font-size:22px;color:#eee;margin-bottom:12px}
-.hero-note{max-width:700px;margin:0 auto 12px;color:#ccc}
-.location{color:#ddd;margin-bottom:25px}
-.buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:850px;
+}
+
+.logo{
+    font-size:15px;
+    letter-spacing:5px;
+    color:#d4af37;
+    text-transform:uppercase;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:clamp(42px,9vw,82px);
+    line-height:1;
+    margin-bottom:22px;
+    font-weight:800;
+}
+
+.hero h1 span{
+    color:#d4af37;
+}
+
+.hero p{
+    font-size:18px;
+    color:#ddd;
+    max-width:650px;
+    margin:0 auto 30px;
+    line-height:1.7;
+}
+
+.location{
+    color:#d4af37;
+    margin-bottom:30px;
+    font-size:15px;
+}
+
+.buttons{
+    display:flex;
+    gap:14px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
 .btn{
-  display:inline-block;padding:13px 22px;border-radius:999px;
-  font-weight:700;transition:.2s;border:1px solid var(--gold);
+    padding:15px 25px;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
+    display:inline-block;
 }
-.btn:hover{transform:translateY(-2px)}
-.btn-gold{background:var(--gold);color:#111}
-.btn-dark{background:transparent;color:#fff}
-.section{max-width:1100px;margin:auto;padding:75px 20px}
-.section-title{text-align:center;font-size:34px;margin-bottom:10px}
-.section-subtitle{text-align:center;color:var(--muted);max-width:650px;margin:0 auto 35px}
+
+.btn-gold{
+    background:#d4af37;
+    color:#080808;
+}
+
+.btn-dark{
+    border:1px solid #d4af37;
+    color:#fff;
+    background:rgba(0,0,0,.45);
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 30px rgba(212,175,55,.25);
+}
+
+section{
+    padding:80px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title small{
+    color:#d4af37;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.section-title h2{
+    font-size:38px;
+    margin-top:10px;
+}
+
 .services{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;
+    background:#101010;
 }
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+}
+
 .card{
-  background:#fff;padding:28px 22px;border-radius:18px;
-  border:1px solid #eee;box-shadow:0 8px 25px rgba(0,0,0,.07);
-  transition:.2s;text-align:center;
+    background:linear-gradient(145deg,#181818,#0d0d0d);
+    border:1px solid rgba(212,175,55,.22);
+    border-radius:18px;
+    padding:30px 22px;
+    text-align:center;
+    transition:.3s;
 }
-.card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(0,0,0,.11)}
-.icon{font-size:32px;margin-bottom:12px}
-.card h3{margin-bottom:8px}
-.card p{color:var(--muted);font-size:14px}
-.dark-section{background:var(--dark);color:#fff}
-.dark-section .section{padding-top:70px;padding-bottom:70px}
-.features{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;
+
+.card:hover{
+    transform:translateY(-7px);
+    border-color:#d4af37;
 }
-.feature{
-  padding:24px;border:1px solid rgba(212,175,55,.25);
-  border-radius:16px;background:rgba(255,255,255,.04);
+
+.icon{
+    font-size:35px;
+    margin-bottom:15px;
 }
-.feature strong{display:block;color:var(--gold2);margin-bottom:7px}
+
+.card h3{
+    margin-bottom:10px;
+    color:#f1d77a;
+}
+
+.card p{
+    color:#aaa;
+    line-height:1.6;
+    font-size:14px;
+}
+
+.about{
+    background:
+    linear-gradient(rgba(0,0,0,.88),rgba(0,0,0,.92)),
+    url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1800&q=85")
+    center/cover fixed;
+}
+
 .about-box{
-  max-width:800px;margin:auto;text-align:center;font-size:17px;color:#555;
+    max-width:800px;
+    margin:auto;
+    text-align:center;
 }
-.contact-wrap{
-  display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:stretch;
+
+.about-box p{
+    color:#ccc;
+    line-height:1.9;
+    font-size:17px;
 }
+
+.highlight{
+    color:#d4af37;
+}
+
+.contact{
+    background:#0c0c0c;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
 .contact-card{
-  background:#fff;border-radius:20px;padding:30px;
-  box-shadow:0 8px 25px rgba(0,0,0,.07);
+    padding:30px;
+    background:#151515;
+    border-radius:18px;
+    text-align:center;
+    border:1px solid #222;
 }
-.contact-card h3{margin-bottom:14px}
-.contact-card p{margin-bottom:8px}
-.contact-actions{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
-.map{
-  min-height:100%;border-radius:20px;padding:35px;
-  background:linear-gradient(145deg,#171717,#292929);
-  color:#fff;display:flex;flex-direction:column;justify-content:center;
-}
-.map h3{color:var(--gold2);font-size:25px;margin-bottom:10px}
-footer{background:#070707;color:#aaa;text-align:center;padding:28px 15px;font-size:13px}
-footer strong{color:#fff}
-.mobile-bar{
-  display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;
-  background:#111;padding:9px;gap:8px;
-}
-.mobile-bar a{flex:1;text-align:center;padding:10px;border-radius:8px;font-weight:700;font-size:13px}
-.mobile-call{background:#fff;color:#111}
-.mobile-wa{background:var(--gold);color:#111}
-@media(max-width:700px){
-  .nav-links{display:none}
-  .hero{min-height:82vh;padding:55px 16px}
-  .tagline{font-size:18px}
-  .section{padding:55px 16px}
-  .section-title{font-size:29px}
-  .contact-wrap{grid-template-columns:1fr}
-  .mobile-bar{display:flex}
-  footer{padding-bottom:80px}
-}
-</style>
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"BeautySalon",
-  "name":"Black Scissors Unisex Salon",
-  "description":"Professional hair, beauty and grooming salon in Pethapur, Gandhinagar.",
-  "telephone":"+916354694991",
-  "address":{
-    "@type":"PostalAddress",
-    "streetAddress":"1st Floor, Pranam 2 Complex, Near Ramapir Mandir",
-    "addressLocality":"Pethapur",
-    "addressRegion":"Gujarat",
-    "postalCode":"382610",
-    "addressCountry":"IN"
-  },
-  "areaServed":["Pethapur","Gandhinagar","Gujarat"],
-  "url":"https://blackscissorssalon.github.io/black-scissors-salon/"
+.contact-card .icon{
+    color:#d4af37;
 }
-</script>
 
-<style>
-/* Premium salon touches */
-.hero{
-  min-height:92vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  isolation:isolate;
+.contact-card h3{
+    margin-bottom:10px;
 }
-.hero::before{
-  content:"";
-  position:absolute;inset:-8%;
-  background:inherit;
-  animation:salonZoom 18s ease-in-out infinite alternate;
-  z-index:-2;
+
+.contact-card p{
+    color:#aaa;
+    line-height:1.6;
 }
-@keyframes salonZoom{
-  from{transform:scale(1)}
-  to{transform:scale(1.08)}
+
+.map-btn{
+    display:inline-block;
+    margin-top:15px;
+    color:#d4af37;
+    font-weight:bold;
 }
-.hero-particles{
-  position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1;
+
+footer{
+    padding:35px 20px;
+    text-align:center;
+    background:#050505;
+    border-top:1px solid #222;
 }
-.hero-particles i{
-  position:absolute;width:4px;height:4px;border-radius:50%;
-  background:#d4af37;opacity:.35;
-  animation:floatGold 7s ease-in-out infinite;
+
+footer strong{
+    color:#d4af37;
 }
-.hero-particles i:nth-child(1){left:12%;top:28%;animation-delay:0s}
-.hero-particles i:nth-child(2){left:78%;top:20%;animation-delay:1.5s}
-.hero-particles i:nth-child(3){left:68%;top:70%;animation-delay:3s}
-.hero-particles i:nth-child(4){left:25%;top:76%;animation-delay:4.5s}
-@keyframes floatGold{
-  0%,100%{transform:translateY(0) scale(1);opacity:.2}
-  50%{transform:translateY(-22px) scale(1.6);opacity:.7}
+
+footer p{
+    color:#777;
+    margin-top:8px;
+    font-size:13px;
 }
-.hero-buttons{
-  display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
+    z-index:99;
+    box-shadow:0 8px 25px rgba(0,0,0,.4);
 }
-.hero-buttons a{
-  text-decoration:none;display:inline-block;padding:13px 25px;border-radius:30px;
-  font-weight:700;transition:.25s
-}
-.hero-buttons .primary{background:#d4af37;color:#111}
-.hero-buttons .secondary{border:1px solid #d4af37;color:#fff;background:rgba(0,0,0,.25)}
-.hero-buttons a:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(212,175,55,.22)}
-.booking{
-  max-width:1100px;margin:0 auto 70px;padding:55px 24px;text-align:center;
-  border-radius:28px;overflow:hidden;position:relative;color:#fff;
-  background:
-    linear-gradient(rgba(8,8,8,.78),rgba(8,8,8,.88)),
-    url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=85") center/cover;
-  box-shadow:0 18px 60px rgba(0,0,0,.18)
-}
-.booking h2{font-size:clamp(28px,5vw,44px);margin:0 0 10px}
-.booking p{max-width:650px;margin:0 auto 24px;opacity:.86}
-.booking a{
-  display:inline-block;background:#d4af37;color:#111;text-decoration:none;
-  padding:14px 28px;border-radius:30px;font-weight:800
-}
+
 @media(max-width:600px){
-  .hero{min-height:88vh}
-  .hero-buttons a{width:80%;text-align:center}
+
+    section{
+        padding:65px 17px;
+    }
+
+    .hero{
+        min-height:95vh;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .btn{
+        width:100%;
+        max-width:260px;
+    }
 }
 </style>
-
 </head>
 
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a class="logo" href="#">BLACK <span>SCISSORS</span></a>
-    <div class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
-
+<!-- HERO -->
 <header class="hero">
-  <div class="hero-content">
-    <div class="badge">UNISEX SALON • PETHAPUR</div>
-    <h1>Black Scissors <span>Unisex Salon</span></h1>
-    <p class="tagline">Your Style, Our Passion.</p>
-    <p class="hero-note">Professional hair, beauty and grooming services for men and women in Pethapur, Gandhinagar.
-<div class="hero-buttons"><a class="primary" href="tel:+916354694991">Book Your Appointment</a><a class="secondary" href="#services">Explore Services</a></div></p>
-    <p class="location">📍 Pranam 2 Complex, Near Ramapir Mandir, Pethapur</p>
-    <div class="buttons">
-      <a class="btn btn-gold" href="tel:+916354694991">📞 Call Now</a>
-      <a class="btn btn-gold" href="https://wa.me/916354694991">💬 WhatsApp</a>
-      <a class="btn btn-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Black+Scissors+Unisex+Salon+Pethapur+Gandhinagar+Gujarat+382610">📍 Get Directions</a>
-    </div>
-  </div>
+
+<div class="hero-content">
+
+<div class="logo">✂ Black Scissors</div>
+
+<h1>
+Black Scissors<br>
+<span>Unisex Salon</span>
+</h1>
+
+<p>
+Your style. Our passion.
+Professional hair, beauty and grooming services
+for men and women in Pethapur, Gandhinagar.
+</p>
+
+<div class="location">
+📍 Pranam 2 Complex, Near Ramapir Mandir, Pethapur
+</div>
+
+<div class="buttons">
+
+<a class="btn btn-gold"
+href="tel:+916354694991">
+📞 Call Now
+</a>
+
+<a class="btn btn-dark"
+href="https://wa.me/916354694991"
+target="_blank">
+💬 WhatsApp
+</a>
+
+<a class="btn btn-dark"
+href="https://www.google.com/maps/search/?api=1&query=Black+Scissors+Unisex+Salon+Pethapur+Gandhinagar"
+target="_blank">
+📍 Get Directions
+</a>
+
+</div>
+
+</div>
 </header>
 
-<section class="section" id="services">
-  <h2 class="section-title">Our Services</h2>
-  <p class="section-subtitle">Everything you need for a fresh, confident look.</p>
-  <div class="services">
-    <div class="card"><div class="icon">✂️</div><h3>Hair Cut</h3><p>Professional men's & women's haircuts.</p></div>
-    <div class="card"><div class="icon">💈</div><h3>Beard Styling</h3><p>Modern beard trims and styling.</p></div>
-    <div class="card"><div class="icon">💇</div><h3>Hair Spa</h3><p>Healthy hair treatments & spa.</p></div>
-    <div class="card"><div class="icon">🎨</div><h3>Hair Color</h3><p>Premium coloring and highlights.</p></div>
-    <div class="card"><div class="icon">✨</div><h3>Facial</h3><p>Skin care and facial treatments.</p></div>
-    <div class="card"><div class="icon">💆</div><h3>Grooming</h3><p>Complete grooming services.</p></div>
-  </div>
-</section>
 
-<div class="dark-section">
-  <section class="section">
-    <h2 class="section-title">Why Choose Us</h2>
-    <p class="section-subtitle" style="color:#aaa">A clean, comfortable place to look and feel your best.</p>
-    <div class="features">
-      <div class="feature"><strong>✦ Professional Service</strong>Experienced professionals focused on your style.</div>
-      <div class="feature"><strong>✦ Men & Women</strong>Unisex services for your complete grooming needs.</div>
-      <div class="feature"><strong>✦ Comfortable Experience</strong>A clean and welcoming salon environment.</div>
-      <div class="feature"><strong>✦ Easy Booking</strong>Call or message us directly on WhatsApp.</div>
-    </div>
-  </section>
+<!-- SERVICES -->
+<section class="services">
+
+<div class="container">
+
+<div class="section-title">
+<small>What We Do</small>
+<h2>Our Services</h2>
 </div>
 
-<section class="section" id="about">
-  <h2 class="section-title">About Black Scissors</h2>
-  <p class="section-subtitle">Style that fits you.</p>
-  <div class="about-box">
-    Welcome to <strong>Black Scissors Unisex Salon</strong>. We provide quality hair,
-    beard, beauty and grooming services with experienced professionals in a clean
-    and comfortable environment.
-  </div>
+<div class="service-grid">
+
+<div class="card">
+<div class="icon">✂️</div>
+<h3>Hair Cut</h3>
+<p>
+Professional men's and women's
+haircuts with modern styling.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🧔</div>
+<h3>Beard Styling</h3>
+<p>
+Modern beard trims, shaping
+and professional styling.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">💆</div>
+<h3>Hair Spa</h3>
+<p>
+Relaxing hair spa treatments
+for healthy and beautiful hair.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">✨</div>
+<h3>Facial</h3>
+<p>
+Refreshing facial and grooming
+services for a fresh look.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">💇‍♀️</div>
+<h3>Hair Styling</h3>
+<p>
+Stylish looks for parties,
+events and everyday confidence.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">💅</div>
+<h3>Beauty Care</h3>
+<p>
+Professional beauty and grooming
+services for women.
+</p>
+</div>
+
+</div>
+</div>
 </section>
 
-<section class="section" id="contact">
-  <h2 class="section-title">Visit Us</h2>
-  <p class="section-subtitle">Ready for your next look? Get in touch today.</p>
-  <div class="contact-wrap">
-    <div class="contact-card">
-      <h3>📍 Salon Address</h3>
-      <p>Black Scissors Unisex Salon</p>
-      <p>1st Floor, Pranam 2 Complex</p>
-      <p>Near Ramapir Mandir</p>
-      <p>Pethapur, Gandhinagar</p>
-      <p>Gujarat – 382610</p>
-      <div class="contact-actions">
-        <a class="btn btn-gold" href="tel:+916354694991">📞 +91 63546 94991</a>
-        <a class="btn btn-gold" href="https://wa.me/916354694991">💬 Book on WhatsApp</a>
-      </div>
-    </div>
-    <div class="map">
-      <h3>Find Black Scissors</h3>
-      <p>Pranam 2 Complex, Near Ramapir Mandir, Pethapur, Gandhinagar.</p>
-      <div style="margin-top:20px">
-        <a class="btn btn-gold" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Black+Scissors+Unisex+Salon+Pethapur+Gandhinagar+Gujarat+382610">📍 Open Google Maps</a>
-      </div>
-    </div>
-  </div>
+
+<!-- ABOUT -->
+<section class="about">
+
+<div class="container">
+
+<div class="section-title">
+<small>About Us</small>
+<h2>Style Meets Experience</h2>
+</div>
+
+<div class="about-box">
+
+<p>
+Welcome to <span class="highlight">Black Scissors Unisex Salon</span>,
+your local destination for premium hair, beauty and grooming
+services in Pethapur, Gandhinagar.
+</p>
+
+<br>
+
+<p>
+Whether you're looking for a fresh haircut, beard styling,
+hair spa or beauty treatment, our goal is simple —
+to make you look good and feel confident.
+</p>
+
+</div>
+</div>
 </section>
 
+
+<!-- CONTACT -->
+<section class="contact">
+
+<div class="container">
+
+<div class="section-title">
+<small>Visit Us</small>
+<h2>Book Your Visit</h2>
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<div class="icon">📍</div>
+
+<h3>Our Location</h3>
+
+<p>
+Pranam 2 Complex<br>
+Near Ramapir Mandir<br>
+Pethapur, Gandhinagar
+</p>
+
+<a class="map-btn"
+href="https://www.google.com/maps/search/?api=1&query=Black+Scissors+Unisex+Salon+Pethapur+Gandhinagar"
+target="_blank">
+Open Google Maps →
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="icon">📞</div>
+
+<h3>Call Us</h3>
+
+<p>
+Have a question or want to
+book your visit?
+</p>
+
+<a class="map-btn"
+href="tel:+916354694991">
++91 63546 94991
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="icon">💬</div>
+
+<h3>WhatsApp</h3>
+
+<p>
+Message us directly for
+appointments and enquiries.
+</p>
+
+<a class="map-btn"
+href="https://wa.me/916354694991"
+target="_blank">
+Chat on WhatsApp →
+</a>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- FOOTER -->
 <footer>
-  <strong>Black Scissors Unisex Salon</strong><br>
-  Your Style, Our Passion.<br><br>
-  © 2026 Black Scissors Unisex Salon • All Rights Reserved.
+
+<p>
+© 2026 <strong>Black Scissors Unisex Salon</strong>
+</p>
+
+<p>
+Pethapur, Gandhinagar • Your Style, Our Passion
+</p>
+
 </footer>
 
-<div class="mobile-bar">
-  <a class="mobile-call" href="tel:+916354694991">📞 Call</a>
-  <a class="mobile-wa" href="https://wa.me/916354694991">💬 WhatsApp</a>
-</div>
 
-
-<section class="booking">
-  <h2>Ready for Your Next Look?</h2>
-  <p>Give yourself a fresh, confident look at Black Scissors Unisex Salon. Call or WhatsApp us to book your appointment.</p>
-  <a href="https://wa.me/916354694991?text=Hi%20Black%20Scissors%20Salon,%20I%20want%20to%20book%20an%20appointment.">Book on WhatsApp</a>
-</section>
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp"
+href="https://wa.me/916354694991"
+target="_blank"
+aria-label="WhatsApp">
+💬
+</a>
 
 </body>
 </html>
